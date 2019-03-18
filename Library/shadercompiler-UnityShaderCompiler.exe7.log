@@ -1,0 +1,40 @@
+Base path: C:/Program Files/Unity/Editor/Data
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=4284 outsize=1645 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4583 outsize=4509 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 2 plat 4 at Boids.compute(137): cannot implicitly convert from 'const float2' to 'float3'
+  api=4 insize=4589 outsize=0 ok=0
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 2 plat 14 at Boids.compute(47): invalid subscript 'xyz'
+  api=14 insize=4843 outsize=0 ok=0
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 2 plat 14 at Boids.compute(47): invalid subscript 'xyz'
+  api=14 insize=4442 outsize=0 ok=0
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=14 insize=4777 outsize=3505 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=6649 outsize=11781 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
