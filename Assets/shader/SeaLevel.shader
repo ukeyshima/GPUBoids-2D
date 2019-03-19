@@ -1,29 +1,47 @@
-﻿Shader "Custom/SeaLevel"
+﻿Shader "Unlit/SeaLevel"
 {
-    Properties
-    {
-        _Color ("Color", Color) = (1,1,1,1)
-        _MainTex ("Albedo (RGB)", 2D) = "white" {}                
-    }
+    Properties{}
     SubShader
     {
-        Tags { "Queue" = "Transparent" }
-        LOD 200
+        Tags { "RenderType"="Transparent" "Queue"="Transparent" }
+        Blend SrcAlpha OneMinusSrcAlpha 
+        LOD 100
 
-        CGPROGRAM        
-        #pragma surface surf Standard alpha:fade        
-        #pragma target 3.0
+        Pass{
+            CGPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag alpha:fade                  
 
-        sampler2D _MainTex;
+            #include "UnityCG.cginc"
 
-        struct Input
-        {
-            float2 uv_MainTex;
-        };
-        
-        fixed4 _Color;        
+            struct appdata
+            {
+                float4 vertex : POSITION;
+                float2 uv : TEXCOORD0;
+            };
 
-        float random1(float3 p){
+            struct v2f
+            {
+                float2 uv : TEXCOORD0;                
+                float4 vertex : SV_POSITION;
+            };
+
+            sampler2D _MainTex;
+            float4 _MainTex_ST;
+            float2 _MousePosition;
+            float2 _MouseVelocity;
+            float2 _RawMousePosition;
+
+            v2f vert (appdata v)
+            {
+                v2f o;
+                o.vertex = UnityObjectToClipPos(v.vertex);
+                // o.vertex.z+=0.1/abs(sqrt(dot(_RawMousePosition-v.vertex.xy,_RawMousePosition-v.vertex.xy))-0.1*fmod(_Time.y*10.0,30.0));
+                o.uv = TRANSFORM_TEX(v.uv, _MainTex);                
+                return o;
+            }
+
+            float random1(float3 p){
                 return frac(sin(dot(p.xyz,float3(12.9898,46.2346,78.233)))*43758.5453123)*2.0-1.0;
             }
             float random2(float3 p){
@@ -80,18 +98,17 @@
                     m_dist = min(m_dist, dist);
                     }
                 }
-                return m_dist;
+                return m_dist*2.0;
             }
 
-        void surf (Input IN, inout SurfaceOutputStandard o)
-        {            
-            float2 boronoiUV=IN.uv_MainTex.xy;
-            boronoiUV.xy+=perlinNoise(float3(IN.uv_MainTex.xy*15.0,_Time.y/2.0))/10.0;
-            float boronoiColor=boronoi(float3(boronoiUV.x*5.0,boronoiUV.y*5.0,_Time.y/2.0))/2.0;
-            o.Albedo = float3(boronoiColor,boronoiColor,boronoiColor)+_Color;            
-            o.Alpha = 0.5;
+            fixed4 frag (v2f i) : SV_Target{                
+                float2 boronoiUV=i.uv;
+                boronoiUV.xy+=perlinNoise(float3(i.uv*15.0,_Time.y/2.0))/10.0;
+                float boronoiColor=boronoi(float3(boronoiUV.x*5.0,boronoiUV.y*5.0,_Time.y/2.0))/2.0;
+                float3 color=(float3)boronoiColor*float3(1.0,1.0,1.5);                
+                return fixed4(color,0.6);
+            }
+            ENDCG
         }
-        ENDCG
     }
-    FallBack "Diffuse"
 }

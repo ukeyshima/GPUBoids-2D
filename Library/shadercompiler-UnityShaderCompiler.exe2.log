@@ -1,9 +1,9 @@
 Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
 Cmd: compileComputeKernel
-  api=14 insize=4198 outsize=5577 ok=1
+  api=14 insize=6173 outsize=6881 ok=1
 Cmd: translateComputeKernel
-  api=14 insize=5725 outsize=10505 ok=1
+  api=14 insize=7029 outsize=12441 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -37,10 +37,6 @@ Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=14 insize=4198 outsize=3293 ok=1
-Cmd: translateComputeKernel
-  api=14 insize=3653 outsize=5209 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -48,44 +44,82 @@ Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=4 insize=4284 outsize=3877 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  error: 1 plat 14 at Boids.compute(136): implicit truncation of vector type
-  error: 1 plat 14 at Boids.compute(141): implicit truncation of vector type
-  error: 2 plat 14 at Boids.compute(142): 'limit': cannot implicitly convert from 'float2' to 'float3'
-  api=14 insize=4589 outsize=0 ok=0
-Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  error: 2 plat 4 at Boids.compute(47): invalid subscript 'xyz'
-  api=4 insize=4779 outsize=0 ok=0
-Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  error: 2 plat 14 at Boids.compute(47): invalid subscript 'xyz'
-  api=14 insize=4843 outsize=0 ok=0
-Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  error: 2 plat 14 at Boids.compute(47): invalid subscript 'xyz'
-  api=14 insize=4843 outsize=0 ok=0
-Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  error: 2 plat 14 at Boids.compute(47): invalid subscript 'xyz'
-  api=14 insize=4442 outsize=0 ok=0
-Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=14 insize=4841 outsize=6501 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=4 insize=4777 outsize=1645 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler

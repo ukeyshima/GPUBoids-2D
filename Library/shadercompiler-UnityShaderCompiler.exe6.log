@@ -1,40 +1,136 @@
 Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  error: 2 plat 14 at Boids.compute(148): undeclared identifier 'forct'
-  api=14 insize=4583 outsize=0 ok=0
-Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=14 insize=4583 outsize=3505 ok=1
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  error: 2 plat 4 at Boids.compute(137): cannot implicitly convert from 'const float2' to 'float3'
-  api=4 insize=4589 outsize=0 ok=0
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  error: 2 plat 14 at Boids.compute(47): invalid subscript 'xyz'
-  api=14 insize=4843 outsize=0 ok=0
-Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  error: 2 plat 4 at Boids.compute(47): invalid subscript 'xyz'
-  api=4 insize=4442 outsize=0 ok=0
-Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=4 insize=4841 outsize=1645 ok=1
 Cmd: translateComputeKernel
-  api=14 insize=6649 outsize=11781 ok=1
+  api=14 insize=6673 outsize=11781 ok=1
+Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: compileComputeKernel
-  api=4 insize=4817 outsize=4549 ok=1
+  api=4 insize=4940 outsize=1745 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: translateComputeKernel
+  api=14 insize=6673 outsize=11781 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: translateComputeKernel
+  api=14 insize=6673 outsize=11781 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5343 outsize=4549 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 14 at Boids.compute(165): undeclared identifier 'WallSize'
+  api=14 insize=5483 outsize=0 ok=0
 Cmd: initializeCompiler
 Cmd: compileComputeKernel
-  api=4 insize=4777 outsize=4549 ok=1
+  api=14 insize=5484 outsize=6525 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=14 insize=5478 outsize=6525 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=5466 outsize=6525 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=6673 outsize=11781 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=6673 outsize=11781 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 2 plat 14 at Boids.compute(158): undeclared identifier '_BoidForceBufferWrite'
+  api=14 insize=5859 outsize=0 ok=0
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 2 plat 14 at Boids.compute(82): undeclared identifier '_BoidForceBufferWrite'
+  api=14 insize=5897 outsize=0 ok=0
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=14 insize=5905 outsize=6637 ok=1
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=5873 outsize=4569 ok=1
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=5844 outsize=4569 ok=1
+Cmd: initializeCompiler
+Cmd: translateComputeKernel
+  api=14 insize=4333 outsize=6013 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=5850 outsize=4569 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=4133 outsize=5537 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=6314 outsize=3649 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=4133 outsize=5625 ok=1
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=14 insize=6314 outsize=3649 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=6176 outsize=6873 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=4133 outsize=5625 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: translateComputeKernel
+  api=14 insize=841 outsize=785 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1176 outsize=781 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10881 outsize=9693 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=10553 outsize=18425 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4855 outsize=3733 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4855 outsize=5437 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3396 outsize=2681 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=18299 outsize=9397 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=18299 outsize=11797 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=9397 outsize=16205 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=9953 outsize=16885 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=11797 outsize=25505 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=3072 outsize=793 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=2044 outsize=1505 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1505 outsize=2273 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
